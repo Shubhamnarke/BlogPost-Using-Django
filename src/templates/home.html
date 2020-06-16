@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<title>Home Page</title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+{% include 'nav_bar.html' %}
+
+		<div class="jumbotron">
+          <div class="col-sm-8 mx-auto text-justify">
+            <h1>Blog Post's</h1>
+            
+              <a class="btn btn-primary" style="margin-left: 600px" href="{% url 'create_post_view' %}" role="button">Create New Post &raquo;</a>
+            </p>
+          </div>
+        </div>
+
+{% endblock %}

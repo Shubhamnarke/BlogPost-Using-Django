@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<title>Home Page</title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+{% include 'nav_bar.html' %}
+
+	<p style="margin-top: 10px">Name : {{ post.name }} </p>
+	<p>Discription : {{ post.discription }}</p>
+	<p>Author : {{ post.author }}</p>
+
+{% endblock %}

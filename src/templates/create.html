@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<title>Create Post</title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+{% include 'nav_bar.html' %}
+
+<div >
+<form  style="margin-top: 90px;margin-left: 100px" action="." method="POST">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<input class = "btn btn-primary" type="submit" name="Save"/>
+</form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<title>Home Page</title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+{% include 'nav_bar.html' %}
+
+ <p style="margin-top: 10px">Name : {{ obj.name }} </p>
+	<p>Discription : {{ obj.discription }}</p>
+	<p>Author : {{ obj.author }}</p>
+
+{% endblock %}

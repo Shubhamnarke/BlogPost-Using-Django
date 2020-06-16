@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+<title>All Post</title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+{% include 'nav_bar.html' %}
+
+{% for i in post %}
+
+	<p style="margin-top: 10px">Name : {{ i.name }} </p>
+	<p>Discription : {{ i.discription }}</p>
+	<p>Author : {{ i.author }}</p>
+	<hr>
+	
+
+{% endfor%}
+
+{% endblock %}
